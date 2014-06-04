@@ -1,0 +1,25 @@
+@mixin border-radius($radius)
+	-moz-border-radius: $radius
+	-webkit-border-radius: $radius
+	border-radius: $radius
+
+@mixin user-select()
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+@mixin box-sizing($value: border-box)
+	-moz-box-sizing: $value
+	-webkit-box-sizing: $value
+	box-sizing: $value
+	
+.border-tester
+	+border-radius(5px)
+	background: darken(blue, 100%)
+	width: 100px
+	height: 100px
+	+user-select
+
