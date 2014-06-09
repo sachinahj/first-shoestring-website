@@ -310,20 +310,21 @@ th {
   padding: 0; }
 
 /* clear fix */
-/* line 13, /home/vagrant/code/mks/frontend/first-shoestring-website/sass/shoestring/clearfix.sass */
-.clearfix:before, .container:before, .full-width-container:before,
+/* line 13, ../../../sass/shoestring/clearfix.sass */
+.clearfix:before, .container:before, .full-width-container:before, .column:before,
 .clearfix:after,
 .container:after,
-.full-width-container:after {
+.full-width-container:after,
+.column:after {
   content: " ";
   display: table; }
 
-/* line 18, /home/vagrant/code/mks/frontend/first-shoestring-website/sass/shoestring/clearfix.sass */
-.clearfix:after, .container:after, .full-width-container:after {
+/* line 18, ../../../sass/shoestring/clearfix.sass */
+.clearfix:after, .container:after, .full-width-container:after, .column:after {
   clear: both; }
 
-/* line 26, /home/vagrant/code/mks/frontend/first-shoestring-website/sass/shoestring/clearfix.sass */
-.clearfix, .container, .full-width-container {
+/* line 26, ../../../sass/shoestring/clearfix.sass */
+.clearfix, .container, .full-width-container, .column {
   *zoom: 1; }
 
 /* line 19, /home/vagrant/code/mks/frontend/first-shoestring-website/sass/shoestring/mixins.sass */
@@ -450,16 +451,37 @@ input[type=button].button, input[type=submit].button, button.button {
   cursor: pointer;
   outline: none; }
 
-/* line 10, ../../../sass/shoestring/main.sass */
+/* line 11, ../../../sass/shoestring/main.sass */
 .title {
   color: black;
   font-family: Lobster;
-  font-size: 4em;
-  padding: 0; }
-  /* line 15, ../../../sass/shoestring/main.sass */
+  font-size: 4rem;
+  padding: 0;
+  float: left; }
+  /* line 17, ../../../sass/shoestring/main.sass */
   .title.right {
     float: right; }
+  /* line 19, ../../../sass/shoestring/main.sass */
+  .title.center {
+    float: none; }
 
-/* line 18, ../../../sass/shoestring/main.sass */
+/* line 22, ../../../sass/shoestring/main.sass */
 .food.trucks {
   list-style: none; }
+
+/* line 25, ../../../sass/shoestring/main.sass */
+a.button.danger, input.danger[type=button].button, input.danger[type=submit].button, button.danger.button {
+  font-size: 0.2rem;
+  clear: both;
+  float: left; }
+  /* line 29, ../../../sass/shoestring/main.sass */
+  a.button.danger.right, input.danger.right[type=button].button, input.danger.right[type=submit].button, button.danger.right.button {
+    float: right; }
+  /* line 31, ../../../sass/shoestring/main.sass */
+  a.button.danger.center, input.danger.center[type=button].button, input.danger.center[type=submit].button, button.danger.center.button {
+    float: none; }
+
+/* line 35, ../../../sass/shoestring/main.sass */
+#introimg {
+  width: 50%;
+  min-width: 20em; }

@@ -15,35 +15,41 @@
     </head>
     <body>
 
-      <!-- Logo -->
+      <!-- header -->
       <div class="container">
+        <!-- loge -->
         <div class="column full">
           <img src="images/logo.png" width=100%/>
         </div>
+        <!-- address and hours -->
         <div class="column full">
           <img src="http://www.draughthouse.com/DH.ADDRESS2.jpg" width=100%/>
         </div>
       </div>
 
       <!-- navigation bar  -->
+      <a name="#top"></a>
       <div class="container">
         <center><div class="column full">
-            <a href="#" class = "button info">Bottles</a>
-            <a href="#" class = "button info">Food</a>
-            <a href="#" class = "button info">Specials</a>
-            <a href="#" class = "button info">Photos</a>
+          <a href="#bottles" class="button info">Bottles</a>
+          <a href="#food" class="button info">Food</a>
+          <a href="#specials" class="button info">Specials</a>
+          <a href="#photos" class="button info">Photos</a>
         </div></center>
       </div>
 
       <!-- intro picture -->
       <div class="container">
-        <center><img src="http://www.draughthouse.com/dh.collage2.jpg" width=40%/></center>
+      <!-- id introimg for responsive design -->
+        <center><img id="introimg" src="http://www.draughthouse.com/dh.collage2.jpg" /></center>
       </div>
 
       <!-- bottles -->
+      <a name="bottles"></a>
       <div class="container">
         <div class="column third">
           <span class="title right">Bottles</span>
+          <a href="#top" class="button danger right">back to top</a>
         </div>
         <div class="column two-thirds flow-opposite">
           <img src="images/beers.jpg" width = 100% />
@@ -51,7 +57,13 @@
       </div>
 
       <!-- food -->
+      <a name="food"></a>
       <div class="container">
+      <!-- flowiing opposite for responsive design -->
+        <div class="column third flow-opposite">
+          <span class="title">Food</span>
+          <a href="#top" class="button danger">back to top</a>
+        </div>
         <div class="column two-thirds">
           We have food trucks in our parking lot every day, try them all!
           <ul class="food trucks">
@@ -60,15 +72,16 @@
             <li><b>Wednesday:</b> <a href="http://www.guacnrollaustin.com/">Guac N Roll</a></li>
             <li><b>Thursday & Friday:</b> <a href="http://eskaustin.com/">East Side Kings</a></li>
             <li><b>Saturday:</b><br>Free Brats @ 3pm and <a href="http://garboslobsteratx.com/">Garbo's Lobster Truck</a>@ 6pm</li>
+          </ul>
         </div>
-        <div class="column third flow-opposite">
-          <span class="title">Food</span>
-        </div>
+        
       </div>
 
       <!-- specials -->
+      <a name="specials"></a>
       <div class ="container">
         <div class="column third"><span class = "title right">Specials</span>
+        <a href="#top" class="button danger right">back to top</a>
         </div>
         <div class="column two-thirds flow-opposite">
           <img src="images/specials.png" width = 100% />
@@ -76,9 +89,10 @@
       </div>
 
       <!-- photos -->
+      <a name="photos"></a>
       <div class="container">
         <div class="column full">
-          <center><span class="title">Photos</span></center>
+          <center><span class="title center">Photos</span></center>
         </div>
         <a href="https://www.flickr.com/photos/draughthouse/sets/">
           <div class="column fourth">
@@ -95,6 +109,10 @@
           </div>
         </a>
       </div>
+      <center><a href="#top" class="button danger center" style="margin-bottom: 2em">back to top</a></center>
+
+
+
 
 
     </body>
